@@ -1,0 +1,183 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway" />
+  <link href="css/dashboard.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/driver-register.css" rel="stylesheet">
+  <link href="css/placeholder.css" rel="stylesheet">
+  <title>Hello</title>
+</head>
+
+<body>
+  <!-- <nav class="navbar navbar-inverse bg-inverse sticky-top bg-white  navbar-expand-md p-0"> -->
+  <nav class="navbar navbar-inverse bg-inverse sticky-top bg-white  navbar-expand-md p-0">
+    <a class="navbar-brand  col-md-2" href="#">
+      <img src="img/logo-nekso.svg" class="logo-nekso" align="middle"> | Ally
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+        
+      </span>
+    </button>
+
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto px-3">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <img src="img/can-flag.svg"> English (CAN)
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">
+              <img src="img/mex-flag.svg"> Spanish (MEX)</a>
+          </div>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link " href="/myaccount">My Account</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/login">Log out</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active"  href="/dashboard">
+              <img src="img/home.svg" class="home-img"> Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/drivers">
+              <img src="img/directions-car.svg" class="driver-img"> Driver
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="/support">
+              <img src="img/settings.svg" class="settings-img"> Support
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+        <!-- $!bodyContent -->
+
+
+        <div class="row justify-content-md-center">
+          <div class="col-sm-12">
+            <div class="card">
+              <div class="card-block">
+                <div class=" card-tittle welcome-dash">
+                  Welcome to
+                  <b>Nekso</b> Ally
+                </div>
+                <br>
+                <div class="card-text description-dash">
+                  Use this tool to manage and keep track of the driver's registrarion process.
+                </div>
+                <button onclick="window.location='/drivers/create';" class="btn btn-new-driver" href="/drivers/create" role="button">Agregar un conductor nuevo</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-block">
+                <div class="number-font card-title">999</div>
+                <div class="card-text-desc">
+                  <div class="row justify-content-center">
+                    <div class="col-xs-6">
+                      <img src="img/approved.svg" class="img-size" alt="">
+                    </div>
+                    <div class="col-xs-6 align-self-center small-card-text-width">
+                      Drivers Approved
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-block">
+                <div class="number-font card-title">999</div>
+                <div class="card-text-desc">
+                  <div class="row justify-content-center">
+                    <div class="col-xs-6">
+                      <img src="img/pending.svg" class="img-size" alt="">
+                    </div>
+                    <div class="col-xs-6 align-self-center small-card-text-width">
+                      Drivers Pending
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-block">
+                <div class="number-font card-title">999</div>
+                <div class="card-text-desc">
+                  <div class="row justify-content-center">
+                    <div class="col-xs-6">
+                      <img src="img/drivers.svg" class="img-size" alt="">
+                    </div>
+                    <div class="col-xs-6 align-self-center card-text small-card-text-width ">
+                      Drivers Registered
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+      </main>
+    </div>
+  </div>
+
+
+  <footer>
+    <!-- Optional JavaScript -->
+  </footer>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

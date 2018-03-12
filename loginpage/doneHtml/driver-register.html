@@ -1,0 +1,105 @@
+<h1 class="register-header">Add new driver</h1>
+<div class="card">
+    <div class="card-body">
+        <form action="register" method="POST">
+            <h4 class="register-tittle">Driver Personal information</h4>
+            <div class="form-row">
+                <!--<div class="form-group col-md-2">-->
+                <!--<label>Profile picture</label>-->
+                <!--<canvas id="photo" class="form-control driver-input"></canvas>-->
+                <!--</div>-->
+                <div class="form-group col-md-12">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="fullName" class="register-label">FullName</label>
+                            <input type="text" class="form-control driver-input" id="fullName" name="fullName" placeholder="Enter driver's fullname"
+                                required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="country" class="register-label">Country</label>
+                            <select class="form-control driver-input" id="country" name="countryCode" required>
+                                <option value="" class="placeselect" disabled selected>Select your country</option>
+                                <option value="CO">Colombia</option>
+                                <option value="MX">Mexico</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="email" class="register-label">Email</label>
+                            <input type="text" class="form-control driver-input" id="email" name="email" placeholder="Enter driver's email" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="workinCity" class="register-label">Working City</label>
+                            <select class="form-control driver-input" id="workinCity" name="workingCity" required>
+                                <option value="" class="placeselect" disabled selected>Select your city</option>
+                                <option value="Bogota">Bogota</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="phone" class="register-label">Phone</label>
+                            <input type="text" class="form-control driver-input" id="phone" name="phone" placeholder="Enter driver's phone" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <h4 class="register-tittle">Vehicle information</h4>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="carMaker" class="register-label">Car Brand</label>
+                    <select class="form-control driver-input" id="carMaker" name="carMaker" required>
+                        <option value="" class="placeselect" disabled selected>Select your car Brand</option>
+                        <option value="Chevrolet">Chevrolet</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="carModel" class="register-label">Car model</label>
+                    <select class="form-control driver-input" id="carModel" name="carModel" required>
+                        <option value="" class="placeselect" disabled selected>Select your car model</option>
+                        <option value="Aveo">Aveo</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+
+                <div class="form-group col-md-6">
+                    <label for="carLicensePlate" class="register-label">Car license plate</label>
+                    <input type="text" class="form-control driver-input" id="carLicensePlate" name="carLicensePlate" placeholder="Enter car's license plate"
+                        required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="carColor" class="register-label">Car color</label>
+                    <select class="form-control driver-input" id="carColor" name="carColor" required>
+                        <option value="" class="placeselect" disabled selected>Select your car color</option>
+                        <option value="Black">Black</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Red">Red</option>
+                        <option value="Green">Green</option>
+                        <option value="White">White</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="taxiline" class="register-label">Taxiline</label>
+                    <select class="form-control driver-input" id="taxiline" name="taxiLineId" required>
+                        <option value="" class="placeselect" disabled selected>Select your taxiline</option>
+                        <option value="ea4154f4-4d4c-432c-bbd1-321c1aa57914">Taxi Colombia</option>
+                    </select>
+                </div>
+            </div>
+    </div>
+</div>
+
+<div class="row justify-content-end ">
+    <div class="col-xs-12 register-button-margin">
+        <button onclick="window.location='/dashboard';" class="btn register-btn ">Cancel</button>
+        <button type="submit" class="btn register-btn ">Save</button>
+    </div>
+
+</div>
+</form>

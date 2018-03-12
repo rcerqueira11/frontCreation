@@ -1,0 +1,62 @@
+.driver-input {
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: solid 1px #cccccc;
+}
+
+.register-tittle {
+    font-family: Raleway;
+    /* font-size: 16px; */
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #5e676e;
+}
+
+.register-label {
+    font-family: Raleway;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #666666;
+}
+
+.register-btn {
+    width: 150px;
+    height: 44px;
+    border-radius: 4px;
+    background-color: #08283f;
+    font-family: Raleway;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.31;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+.register-button-margin{
+    margin-top: 24px;
+    margin-right: 24px;
+}
+
+.register-header{
+    font-family: Raleway;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #08283f;
+    margin-left: 32px;
+    margin-bottom: 16px;
+}
