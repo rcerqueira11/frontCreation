@@ -50,6 +50,7 @@ body {
     padding-right: 31px;
     padding: 18px 31px 21px 31px;
     vertical-align: top;
+    color: #e5e5e5;
 }
 
 .sidebar .nav-link .feather {
@@ -61,14 +62,12 @@ body {
 .sidebar .nav-link:hover,
 .sidebar .nav-link.active {
     color: #00bfa5;
-    background-color: #08283f ;
+    background-color: #08283f;
 }
 
 .sidebar .nav-link:hover .feather,
 .sidebar .nav-link.active .feather {
     color: inherit;
-    
-
 }
 
 .sidebar-heading {
@@ -110,13 +109,12 @@ body {
  */
 
 .border-top {
-    border-top: 1px solid ;
+    border-top: 1px solid;
 }
 
 .border-bottom {
-    border-bottom: 1px solid ;
+    border-bottom: 1px solid;
 }
-
 
 /* new styles */
 
@@ -137,7 +135,6 @@ body {
     /* padding-top: 15px; */
     text-decoration: none;
 }
-
 
 .logo-nekso {
     width: 6.3vw;

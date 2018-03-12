@@ -43,16 +43,8 @@
     color: #08283f;
 }
 
-
-
-.card-block {
-    margin: 35px;
-}
-
 .number-font {
     font-family: Roboto;
-    /* font-size: 5vw; */
-    font-size: 60px;
     font-weight: 300;
     font-style: normal;
     font-stretch: normal;
@@ -76,14 +68,6 @@
     color: #08283f;
 }
 
-.small-card-text-width {
-    /* min-width: 8.82vw; */
-}
-
 .img-size {
-    /* width: 80px; */
-    /* height: 80px; */
     min-width: 6.25vw;
-
-    /* height: 6.25vh; */
 }

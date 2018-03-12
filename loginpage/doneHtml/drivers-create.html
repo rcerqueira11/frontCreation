@@ -1,0 +1,136 @@
+<h1 class="section-title">$title</h1>
+<div class="card">
+    <div class="card-body">
+        <div class="alert alert-danger alert-dismissible fade show" role="alert" style="display:none;" id="alertFail">
+            <strong>Failed!</strong>
+            <span id="failedMessage"></span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <form id="createForm" method="POST" enctype="multipart/form-data">
+            <h5>DRIVER PERSONAL INFORMATION</h5>
+            <div class="form-row">
+                <div class="form-group col-md-9">
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="fullName">FullName</label>
+                            <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter driver's fullname" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter driver's email" required>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="country">Country</label>
+                            <select class="form-control" id="country" name="country" required>
+                                <option value="" selected>Choose</option>
+                                #foreach($country in $countries)
+                                <option value="$country.code:$country.phoneCode">$country.name</option>
+                                #end
+                            </select>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="phone">Phone</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="phoneCode">+</span>
+                                </div>
+                                <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter driver's phone" required pattern="\d*"
+                                    disabled title="Only numbers">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="workingCity">Working City</label>
+                            <select class="form-control" id="workingCity" name="workingCity" required disabled="disabled">
+                                <option value="" selected>Choose</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-3">
+                    <div class="form-row">
+                        <label class="col-md-12" for="profilePicture">Profile picture</label>
+                        <div class="form-group col-md-12">
+                            <img style="min-width: 200px; max-width:200px; height: auto;" src="https://media.istockphoto.com/photos/silhouette-of-a-businessman-for-use-as-a-profile-picture-picture-id474001632?k=6&m=474001632&s=612x612&w=0&h=rM8jjIP7BvFJVz4Jg7iqta7iKzVqhBmI-8P-Av45Q_U="
+                                alt="Profile picture" id="profileImage" class="img-thumbnail img-responsive" />
+                            <input hidden type="file" class="form-control" accept="image/jpeg, image/jpg" id="profilePicture" name="profilePicture" required
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h5>VEHICLE INFORMATION</h5>
+            <div class="form-row">
+                <div class="form-group col-md-9">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="carMaker">Car maker</label>
+                            <select class="form-control" id="carMaker" name="carMaker" required>
+                                <option value="" selected>Choose</option>
+                                #foreach($maker in $carMakers)
+                                <option value="$maker">$maker</option>
+                                #end
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="carModel">Car model</label>
+                            <select class="form-control" id="carModel" name="carModel" required disabled="disabled">
+                                <option value="" selected>Choose</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="carLicensePlate">Car license plate</label>
+                            <input type="text" class="form-control" id="carLicensePlate" name="carLicensePlate" placeholder="Enter car's license plate"
+                                required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="carYear">Car year</label>
+                            <select class="form-control" id="carYear" name="carYear" required>
+                                <option value="" selected>Choose</option>
+                                #foreach($year in $carYears)
+                                <option value="$year">$year</option>
+                                #end
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="carColor">Car color</label>
+                            <select class="form-control" id="carColor" name="carColor" required>
+                                <option value="" selected>Choose</option>
+                                #foreach($color in $carColors)
+                                <option value="$color">$color</option>
+                                #end
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="taxiline">Taxiline</label>
+                            <select class="form-control" id="taxiline" name="taxiLineId" required>
+                                <option value="" selected>Choose</option>
+                                <option value="ea4154f4-4d4c-432c-bbd1-321c1aa57914">Taxi Colombia</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-3">
+                    <div class="form-row">
+                        <label class="col-md-8" for="carPicture">Car picture</label>
+                        <div class="form-group col-md-12">
+                            <img style="min-width: 200px; max-width:200px; height: auto;" src="http://www.freevectors.net/files/large/FreeVectorSportsCarhevroletCamaroVector.jpg"
+                                alt="Profile picture" id="carImage" class="img-thumbnail img-responsive" />
+                            <input hidden type="file" class="form-control" accept="image/jpeg, image/jpg" id="carPicture" name="carPicture" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" id="createSubmit" class="btn btn-register ">Register</button>
+        </form>
+    </div>
+</div>
