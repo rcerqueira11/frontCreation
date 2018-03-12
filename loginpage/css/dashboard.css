@@ -79,7 +79,7 @@ body {
  * Navbar
  */
 
-.navbar-brand {
+.navbar-brando {
     /* width: 238px; */
     padding-top: .90rem;
     padding-bottom: .75rem;
@@ -99,7 +99,7 @@ body {
     text-decoration: none;
 }
 
-a.navbar-brand:hover {
+a.navbar-brando:hover {
     text-decoration: none;
     color: white;
 }
