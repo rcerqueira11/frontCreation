@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    
+
     <div class="main">
         <div class="wrapper">
             <div class="logo-nekso">
@@ -28,23 +28,19 @@
 
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="text-center sign-in-text">SIGN IN</h5>
-                    <form id="loginForm" class="" method="post">
-                        <label for="inputEmail" >Email</label>
-                        <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Enter your email" required
-                        autofocus>
-                        <label for="inputPassword" class="">Password</label>
-                        <input type="password" id="inputPassword" class="form-control" placeholder="Enter your password"
-                        required>
-                        <div class="card-text error-login">The email is not registered in our system.</div>
-                        <span class="align-right forgot-margen">
-                            <a href="#" class="forgot-pass-text">Forgot Your Password?</a>
-                        </span>
-                        <button class="btn btn-block sign-in-btn" type="submit">Sign in</button>
-                    </form>
+                        <h5 class="text-center sign-in-text">FORGOT PASSWORD</h5>
+                        <form id="recoverForm" class="" method="post">
+                            <label for="inputEmail">Email</label>
+                            <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Enter your email" required autofocus>
+                            <!-- <div class="card-text error-login">The email is not registered in our system.</div> -->
+                            <button class="btn btn-block sign-in-btn" type="submit">Reset Password</button>
+                        </form>
+                        <div class="card-text text-center">
+                            <a href="/login" class="go-back">Go back</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
     </div>
 

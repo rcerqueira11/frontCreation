@@ -95,10 +95,28 @@ form label {
     margin-bottom: 24px;
 }
 
+#recoverForm input[type="email"],
 #loginForm input[type="password"]{
     margin-bottom: auto;
 }
 
+#recoverForm label{
+    margin-top: 10px;
+}
+
+#recoverForm button{
+    margin-top: 20px;
+}
+
+.go-back {
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0px;
+    color: #08283f;
+    text-decoration: none !important;
+}
 span {
     width: 100%;
     display: inline-block;
