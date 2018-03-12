@@ -1,0 +1,262 @@
+html,
+body {
+    height: 100%;
+    background-image: linear-gradient(40deg, #fd7846, #fe3961 71%, #ff0776);
+}
+
+body {
+    /* display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+
+    */
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+.wrapper {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.card-background {
+    width: 429px;
+    /* height: 402px; */
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 402px;
+}
+
+.card-recover-background {
+    width: 429px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 260px;
+}
+
+.sign-in-btn {
+    width: 381px;
+    height: 44px;
+    border-radius: 4px;
+    background-color: #00bfa5;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.31;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 auto;
+    margin-top: 24px;
+    margin-bottom: 25px;
+}
+
+.input-form {
+    width: 381px;
+    height: 44px;
+    border-radius: 2px;
+    background-color: #ffffff;
+}
+
+.label-input {
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #666666;
+    margin-left: 8px;
+}
+
+.label-form {
+    width: 98.7px;
+    height: 21px;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #666666;
+}
+
+.sign-in-text {
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #5e676e;
+    text-align: center;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* placeholder */
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #999999;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #999999;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #999999;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #999999;
+}
+
+.forgot-pass-text {
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0px;
+    color: #08283f;
+    text-align: right !important;
+    text-decoration: none;
+}
+
+.forgot-margen {
+    margin-top: 20px;
+}
+
+.form-signin {
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-top: 19px;
+}
+
+.form-control {
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.form-control-no-margin {
+    margin-bottom: auto;
+}
+
+.form-signin input[type="email"] {
+    width: 381px;
+    height: 44px;
+    border-radius: 2px;
+    background-color: #ffffff;
+}
+
+.form-signin input[type="password"] {
+    width: 381px;
+    height: 44px;
+    border-radius: 2px;
+    background-color: #ffffff;
+}
+
+span {
+    width: 100%;
+    display: inline-block;
+}
+
+span.align-right {
+    text-align: right;
+}
+
+.logo-nekso {
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.input-error {
+    border: 1px solid #e74c3c;
+}
+
+.error-label{
+    color: #e74c3c;
+}
+
+.error-login {
+    margin-top: 12px;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #e74c3c;
+}

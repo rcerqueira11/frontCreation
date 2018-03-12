@@ -79,14 +79,11 @@ body {
  * Navbar
  */
 
-.navbar-brando {
-    /* width: 238px; */
+.navbar-left {
     padding-top: .90rem;
     padding-bottom: .75rem;
     height: 73px;
     background-image: linear-gradient(40deg, #fd7846, #fe3961 71%, #ff0776) !important;
-    /* margin: auto !important; */
-    /* margin-left: 0 !important; */
     font-size: 20px;
     font-weight: 500;
     font-style: normal;
@@ -95,11 +92,10 @@ body {
     letter-spacing: normal;
     text-align: left;
     color: #ffffff;
-    /* padding-top: 15px; */
     text-decoration: none;
 }
 
-a.navbar-brando:hover {
+a.navbar-left:hover {
     text-decoration: none;
     color: white;
 }
