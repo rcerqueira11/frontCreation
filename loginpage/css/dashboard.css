@@ -136,6 +136,11 @@ body {
     text-decoration: none;
 }
 
+a.navbar-brand:hover {
+    text-decoration: none;
+    color: white;
+}
+
 .logo-nekso {
     width: 6.3vw;
     min-width: 63px;

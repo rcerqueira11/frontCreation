@@ -57,3 +57,20 @@
     text-align: left;
     color: #999999;
 }
+
+.section-title {
+    font-family: Raleway;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #08283f;
+    margin-bottom: 16px;
+    margin-left: 32px;
+}
+
+body {
+    background-color: #f8f8f8;  
+}
