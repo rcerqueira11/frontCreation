@@ -1,0 +1,42 @@
+.card-tittle-T {
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #5e676e;
+}
+
+.card-tittle {
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #5e676e;
+}
+
+/* .form-check-input{
+  
+    background-color: #ffffff;
+   
+} */
+
+input[type='checkbox'] {
+    -webkit-appearance: none;
+    width: 22px;
+    height: 22px;
+    background: white;
+    border: solid 1px #cccccc;
+    margin-top: 0;
+}
+
+input[type='checkbox']:checked {
+    background-color: #08283f;
+}
+
+.form-check-label{
+    margin-left: 5px;
+}
